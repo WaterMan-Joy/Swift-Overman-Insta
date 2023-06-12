@@ -20,7 +20,7 @@ struct SearchView: View {
                         
                         // user profile
                         HStack {
-                            Image("IMG_0979")
+                            Image("IMG_0980")
                                 .resizable()
                                 .scaledToFill()
                                 .frame(width: 40, height: 40)

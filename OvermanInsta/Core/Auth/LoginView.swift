@@ -16,7 +16,12 @@ struct LoginView: View {
         // Login View
         NavigationStack {
             
+            
+            
             VStack {
+                
+                Spacer()
+                
                 Text("INSTA")
                     .font(.footnote)
                     .fontWeight(.bold)
@@ -26,19 +31,11 @@ struct LoginView: View {
                     // email
                     TextField("email", text: $email)
                         .autocapitalization(.none)
-                        .font(.subheadline)
-                        .padding(12)
-                        .background(Color(.systemGray6))
-                        .cornerRadius(10)
-                        .padding(.horizontal)
+                        .modifier(IGTextFieldModifier())
                     
                     // password
                     SecureField("password", text: $password)
-                        .font(.subheadline)
-                        .padding(12)
-                        .background(Color(.systemGray6))
-                        .cornerRadius(10)
-                        .padding(.horizontal)
+                        .modifier(IGTextFieldModifier())
                 }
                 
                 // forgot button
@@ -85,6 +82,18 @@ struct LoginView: View {
                         .scaledToFit().frame(width: 40, height: 40)
                     Text("Facebook Login")
                 }
+                
+                Spacer()
+                
+                Divider()
+                
+                NavigationLink {
+                    AddEmailView()
+                        .navigationBarBackButtonHidden(true)
+                } label: {
+                    Text("Don't have an account? Sing Up")
+                }
+                .padding(.vertical)
             }
         }
     }
