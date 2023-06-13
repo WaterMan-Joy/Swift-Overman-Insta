@@ -1,41 +1,40 @@
 //
-//  AddEmailView.swift
+//  AddPasswordView.swift
 //  OvermanInsta
 //
-//  Created by 김종희 on 2023/06/12.
+//  Created by 김종희 on 2023/06/13.
 //
 
 import SwiftUI
 
-struct AddEmailView: View {
-
-    @State private var email: String = ""
+struct CreatePasswordView: View {
+    @State private var password: String = ""
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
         VStack {
-            Text("ADD YOUR EMAILL")
+            Text("ADD YOUR PASSWORD")
                 .font(.footnote)
                 .fontWeight(.semibold)
                 .padding(.vertical)
             
             
             
-            TextField("Email", text: $email)
+            TextField("Password", text: $password)
                 .autocapitalization(.none)
                 .modifier(IGTextFieldModifier())
             
-            NavigationLink {
-                CreateUsernameView()
-                    .navigationBarBackButtonHidden(true)
+            Button {
+                print("next click")
             } label: {
-                Text("Next")
+                Text("complete")
                     .modifier(BlueButtonModifier())
 
             }
             .padding(.vertical)
             
             Spacer()
+            
         }
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
@@ -46,11 +45,12 @@ struct AddEmailView: View {
                     }
             }
         }
+        
     }
 }
 
-struct AddEmailView_Previews: PreviewProvider {
+struct CreatePasswordView_Previews: PreviewProvider {
     static var previews: some View {
-        AddEmailView()
+        CreatePasswordView()
     }
 }

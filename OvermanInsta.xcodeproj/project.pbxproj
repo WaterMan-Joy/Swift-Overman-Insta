@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		A838FF642A373CDA0090382D /* IGTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A838FF632A373CDA0090382D /* IGTextFieldModifier.swift */; };
+		A838FF662A373EE40090382D /* CreateUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A838FF652A373EE40090382D /* CreateUsernameView.swift */; };
+		A838FF682A381C9E0090382D /* CreatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A838FF672A381C9E0090382D /* CreatePasswordView.swift */; };
+		A838FF6A2A381EF00090382D /* CompleteSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A838FF692A381EF00090382D /* CompleteSignUpView.swift */; };
+		A838FF6C2A381FEB0090382D /* BlueButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A838FF6B2A381FEB0090382D /* BlueButtonModifier.swift */; };
 		A863E0C02A36D2DD00FFC151 /* AddEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A863E0BF2A36D2DD00FFC151 /* AddEmailView.swift */; };
 		A8D482612A331846000D427A /* OvermanInstaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D482602A331846000D427A /* OvermanInstaApp.swift */; };
 		A8D482632A331846000D427A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D482622A331846000D427A /* ContentView.swift */; };
@@ -24,6 +28,10 @@
 
 /* Begin PBXFileReference section */
 		A838FF632A373CDA0090382D /* IGTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGTextFieldModifier.swift; sourceTree = "<group>"; };
+		A838FF652A373EE40090382D /* CreateUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameView.swift; sourceTree = "<group>"; };
+		A838FF672A381C9E0090382D /* CreatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordView.swift; sourceTree = "<group>"; };
+		A838FF692A381EF00090382D /* CompleteSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSignUpView.swift; sourceTree = "<group>"; };
+		A838FF6B2A381FEB0090382D /* BlueButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueButtonModifier.swift; sourceTree = "<group>"; };
 		A863E0BF2A36D2DD00FFC151 /* AddEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailView.swift; sourceTree = "<group>"; };
 		A8D4825D2A331846000D427A /* OvermanInsta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OvermanInsta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D482602A331846000D427A /* OvermanInstaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvermanInstaApp.swift; sourceTree = "<group>"; };
@@ -142,6 +150,9 @@
 			children = (
 				A8D482892A3496F8000D427A /* LoginView.swift */,
 				A863E0BF2A36D2DD00FFC151 /* AddEmailView.swift */,
+				A838FF652A373EE40090382D /* CreateUsernameView.swift */,
+				A838FF672A381C9E0090382D /* CreatePasswordView.swift */,
+				A838FF692A381EF00090382D /* CompleteSignUpView.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -198,6 +209,7 @@
 			children = (
 				A8D482802A33284A000D427A /* UserStatView.swift */,
 				A838FF632A373CDA0090382D /* IGTextFieldModifier.swift */,
+				A838FF6B2A381FEB0090382D /* BlueButtonModifier.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -274,14 +286,18 @@
 			files = (
 				A8D482852A332EC0000D427A /* FeedCell.swift in Sources */,
 				A8D4827E2A331E86000D427A /* ProfileView.swift in Sources */,
+				A838FF6C2A381FEB0090382D /* BlueButtonModifier.swift in Sources */,
 				A8D482632A331846000D427A /* ContentView.swift in Sources */,
 				A8D4828A2A3496F8000D427A /* LoginView.swift in Sources */,
 				A8D482612A331846000D427A /* OvermanInstaApp.swift in Sources */,
 				A863E0C02A36D2DD00FFC151 /* AddEmailView.swift in Sources */,
 				A8D482882A34935F000D427A /* SearchView.swift in Sources */,
+				A838FF6A2A381EF00090382D /* CompleteSignUpView.swift in Sources */,
 				A838FF642A373CDA0090382D /* IGTextFieldModifier.swift in Sources */,
+				A838FF662A373EE40090382D /* CreateUsernameView.swift in Sources */,
 				A8D482812A33284A000D427A /* UserStatView.swift in Sources */,
 				A8D482832A332EB8000D427A /* FeedView.swift in Sources */,
+				A838FF682A381C9E0090382D /* CreatePasswordView.swift in Sources */,
 				A8D4827C2A331B35000D427A /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

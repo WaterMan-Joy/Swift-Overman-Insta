@@ -11,7 +11,7 @@ struct IGTextFieldModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
             .font(.footnote)
-            .padding(12)
+            .padding()
             .background(Color(.systemGray6))
             .cornerRadius(10)
             .padding(.horizontal, 20)

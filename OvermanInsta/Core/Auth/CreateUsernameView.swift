@@ -1,5 +1,5 @@
 //
-//  AddEmailView.swift
+//  AddUsernameView.swift
 //  OvermanInsta
 //
 //  Created by 김종희 on 2023/06/12.
@@ -7,26 +7,26 @@
 
 import SwiftUI
 
-struct AddEmailView: View {
-
-    @State private var email: String = ""
+struct CreateUsernameView: View {
+    
+    @State private var userName: String = ""
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
         VStack {
-            Text("ADD YOUR EMAILL")
+            Text("ADD YOUR USER NAME")
                 .font(.footnote)
                 .fontWeight(.semibold)
                 .padding(.vertical)
             
             
             
-            TextField("Email", text: $email)
+            TextField("User Name", text: $userName)
                 .autocapitalization(.none)
                 .modifier(IGTextFieldModifier())
             
             NavigationLink {
-                CreateUsernameView()
+                CreatePasswordView()
                     .navigationBarBackButtonHidden(true)
             } label: {
                 Text("Next")
@@ -36,6 +36,7 @@ struct AddEmailView: View {
             .padding(.vertical)
             
             Spacer()
+            
         }
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
@@ -46,11 +47,12 @@ struct AddEmailView: View {
                     }
             }
         }
+        
     }
 }
 
-struct AddEmailView_Previews: PreviewProvider {
+struct CreateUsernameView_Previews: PreviewProvider {
     static var previews: some View {
-        AddEmailView()
+        CreateUsernameView()
     }
 }

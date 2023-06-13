@@ -55,16 +55,8 @@ struct LoginView: View {
                     print("login click")
                 } label: {
                     Text("Login")
-                        .font(.subheadline)
-                        .fontWeight(.bold)
-                        .foregroundColor(Color.white)
-                        .frame(maxWidth: .infinity)
-                        .padding(15)
-                        .background(Color.blue)
-                        .cornerRadius(10)
+                        .modifier(BlueButtonModifier())
                 }
-                .padding(.horizontal)
-                .frame(maxWidth: .infinity)
                 
                 // google + facebook login
                 HStack {
