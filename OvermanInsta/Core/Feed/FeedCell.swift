@@ -26,7 +26,6 @@ struct FeedCell: View {
                         .font(.footnote)
                         .fontWeight(.semibold)
                 }
-                
                 Spacer()
                     
             }

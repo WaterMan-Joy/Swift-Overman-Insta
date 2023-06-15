@@ -18,6 +18,8 @@
 		A838FF742A3AC3350090382D /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A838FF732A3AC3350090382D /* PostGridView.swift */; };
 		A863E0C02A36D2DD00FFC151 /* AddEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A863E0BF2A36D2DD00FFC151 /* AddEmailView.swift */; };
 		A86D0EB82A3B254E0076B86D /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86D0EB72A3B254E0076B86D /* ProfileHeaderView.swift */; };
+		A86D0EBA2A3B28FC0076B86D /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86D0EB92A3B28FC0076B86D /* UploadPostView.swift */; };
+		A86D0EBC2A3B31750076B86D /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86D0EBB2A3B31750076B86D /* UploadPostViewModel.swift */; };
 		A8D482612A331846000D427A /* OvermanInstaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D482602A331846000D427A /* OvermanInstaApp.swift */; };
 		A8D482632A331846000D427A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D482622A331846000D427A /* ContentView.swift */; };
 		A8D482652A331848000D427A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8D482642A331848000D427A /* Assets.xcassets */; };
@@ -43,6 +45,8 @@
 		A838FF732A3AC3350090382D /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
 		A863E0BF2A36D2DD00FFC151 /* AddEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailView.swift; sourceTree = "<group>"; };
 		A86D0EB72A3B254E0076B86D /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		A86D0EB92A3B28FC0076B86D /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
+		A86D0EBB2A3B31750076B86D /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
 		A8D4825D2A331846000D427A /* OvermanInsta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OvermanInsta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D482602A331846000D427A /* OvermanInstaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvermanInstaApp.swift; sourceTree = "<group>"; };
 		A8D482622A331846000D427A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -213,6 +217,8 @@
 		A8D4827A2A331ACA000D427A /* UploadPost */ = {
 			isa = PBXGroup;
 			children = (
+				A86D0EB92A3B28FC0076B86D /* UploadPostView.swift */,
+				A86D0EBB2A3B31750076B86D /* UploadPostViewModel.swift */,
 			);
 			path = UploadPost;
 			sourceTree = "<group>";
@@ -312,9 +318,11 @@
 				A838FF6A2A381EF00090382D /* CompleteSignUpView.swift in Sources */,
 				A838FF642A373CDA0090382D /* IGTextFieldModifier.swift in Sources */,
 				A838FF662A373EE40090382D /* CreateUsernameView.swift in Sources */,
+				A86D0EBC2A3B31750076B86D /* UploadPostViewModel.swift in Sources */,
 				A838FF742A3AC3350090382D /* PostGridView.swift in Sources */,
 				A8D482812A33284A000D427A /* UserStatView.swift in Sources */,
 				A8D482832A332EB8000D427A /* FeedView.swift in Sources */,
+				A86D0EBA2A3B28FC0076B86D /* UploadPostView.swift in Sources */,
 				A838FF682A381C9E0090382D /* CreatePasswordView.swift in Sources */,
 				A838FF722A39ED0A0090382D /* Post.swift in Sources */,
 				A8D4827C2A331B35000D427A /* MainTabView.swift in Sources */,
