@@ -25,6 +25,8 @@
 		A86D0EC32A406FAF0076B86D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A86D0EC22A406FAF0076B86D /* FirebaseFirestore */; };
 		A86D0EC52A406FAF0076B86D /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A86D0EC42A406FAF0076B86D /* FirebaseFirestoreSwift */; };
 		A86D0EC72A406FAF0076B86D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A86D0EC62A406FAF0076B86D /* FirebaseStorage */; };
+		A88152112A40756D002F2472 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88152102A40756D002F2472 /* AuthService.swift */; };
+		A88152152A407E64002F2472 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88152142A407E64002F2472 /* ContentViewModel.swift */; };
 		A8D482612A331846000D427A /* OvermanInstaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D482602A331846000D427A /* OvermanInstaApp.swift */; };
 		A8D482632A331846000D427A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D482622A331846000D427A /* ContentView.swift */; };
 		A8D482652A331848000D427A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8D482642A331848000D427A /* Assets.xcassets */; };
@@ -53,6 +55,8 @@
 		A86D0EB92A3B28FC0076B86D /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
 		A86D0EBB2A3B31750076B86D /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
 		A86D0EBD2A406EE60076B86D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A88152102A40756D002F2472 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		A88152142A407E64002F2472 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		A8D4825D2A331846000D427A /* OvermanInsta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OvermanInsta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D482602A331846000D427A /* OvermanInstaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvermanInstaApp.swift; sourceTree = "<group>"; };
 		A8D482622A331846000D427A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,6 +88,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A86D0EC82A40739F0076B86D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8D482892A3496F8000D427A /* LoginView.swift */,
+				A863E0BF2A36D2DD00FFC151 /* AddEmailView.swift */,
+				A838FF652A373EE40090382D /* CreateUsernameView.swift */,
+				A838FF672A381C9E0090382D /* CreatePasswordView.swift */,
+				A838FF692A381EF00090382D /* CompleteSignUpView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A86D0EC92A4074B50076B86D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A88152102A40756D002F2472 /* AuthService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A88152122A407E4B002F2472 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8D482622A331846000D427A /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A88152132A407E51002F2472 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A88152142A407E64002F2472 /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		A8D482542A331846000D427A = {
 			isa = PBXGroup;
 			children = (
@@ -108,7 +148,6 @@
 				A8D482722A331923000D427A /* Core */,
 				A8D482712A331920000D427A /* Model */,
 				A8D482702A33191C000D427A /* Extensions */,
-				A8D482622A331846000D427A /* ContentView.swift */,
 				A86D0EBD2A406EE60076B86D /* GoogleService-Info.plist */,
 				A8D482642A331848000D427A /* Assets.xcassets */,
 				A8D482662A331848000D427A /* OvermanInsta.entitlements */,
@@ -175,11 +214,8 @@
 		A8D482742A3319CA000D427A /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				A8D482892A3496F8000D427A /* LoginView.swift */,
-				A863E0BF2A36D2DD00FFC151 /* AddEmailView.swift */,
-				A838FF652A373EE40090382D /* CreateUsernameView.swift */,
-				A838FF672A381C9E0090382D /* CreatePasswordView.swift */,
-				A838FF692A381EF00090382D /* CompleteSignUpView.swift */,
+				A86D0EC92A4074B50076B86D /* Service */,
+				A86D0EC82A40739F0076B86D /* View */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -196,6 +232,8 @@
 		A8D482762A3319D5000D427A /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				A88152132A407E51002F2472 /* ViewModel */,
+				A88152122A407E4B002F2472 /* View */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -327,12 +365,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8D482852A332EC0000D427A /* FeedCell.swift in Sources */,
+				A88152112A40756D002F2472 /* AuthService.swift in Sources */,
 				A8D4827E2A331E86000D427A /* ProfileView.swift in Sources */,
 				A838FF6C2A381FEB0090382D /* BlueButtonModifier.swift in Sources */,
 				A8D482632A331846000D427A /* ContentView.swift in Sources */,
 				A838FF6E2A3824650090382D /* User.swift in Sources */,
 				A8D4828A2A3496F8000D427A /* LoginView.swift in Sources */,
 				A8D482612A331846000D427A /* OvermanInstaApp.swift in Sources */,
+				A88152152A407E64002F2472 /* ContentViewModel.swift in Sources */,
 				A86D0EB82A3B254E0076B86D /* ProfileHeaderView.swift in Sources */,
 				A863E0C02A36D2DD00FFC151 /* AddEmailView.swift in Sources */,
 				A8D482882A34935F000D427A /* SearchView.swift in Sources */,
