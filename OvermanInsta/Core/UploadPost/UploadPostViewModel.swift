@@ -15,6 +15,7 @@ class UploadPostViewModel: ObservableObject {
     @Published var selectedImage: PhotosPickerItem? {
         didSet { Task { await loadImage(fromItem: selectedImage)}}
     }
+    
     @Published var postImage: Image?
     
     func loadImage(fromItem item: PhotosPickerItem?) async {
