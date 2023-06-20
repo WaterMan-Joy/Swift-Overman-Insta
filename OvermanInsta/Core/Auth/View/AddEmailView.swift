@@ -11,6 +11,7 @@ struct AddEmailView: View {
 
     @State private var email: String = ""
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var viewModel: RegisterViewModel
     
     var body: some View {
         VStack {
@@ -21,7 +22,7 @@ struct AddEmailView: View {
             
             
             
-            TextField("Email", text: $email)
+            TextField("Email", text: $viewModel.email)
                 .autocapitalization(.none)
                 .modifier(IGTextFieldModifier())
             

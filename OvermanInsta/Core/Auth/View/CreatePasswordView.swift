@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct CreatePasswordView: View {
-    @State private var password: String = ""
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var viewModel: RegisterViewModel
     
     var body: some View {
         VStack {
@@ -20,14 +20,15 @@ struct CreatePasswordView: View {
             
             
             
-            TextField("Password", text: $password)
+            TextField("Password", text: $viewModel.password)
                 .autocapitalization(.none)
                 .modifier(IGTextFieldModifier())
             
-            Button {
-                print("next click")
+            NavigationLink {
+                CompleteSignUpView()
+                    .navigationBarBackButtonHidden(true)
             } label: {
-                Text("complete")
+                Text("Next")
                     .modifier(BlueButtonModifier())
 
             }

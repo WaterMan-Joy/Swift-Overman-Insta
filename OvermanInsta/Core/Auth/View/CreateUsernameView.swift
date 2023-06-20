@@ -9,8 +9,8 @@ import SwiftUI
 
 struct CreateUsernameView: View {
     
-    @State private var userName: String = ""
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var viewModel: RegisterViewModel
     
     var body: some View {
         VStack {
@@ -21,7 +21,7 @@ struct CreateUsernameView: View {
             
             
             
-            TextField("User Name", text: $userName)
+            TextField("User Name", text: $viewModel.userName)
                 .autocapitalization(.none)
                 .modifier(IGTextFieldModifier())
             
