@@ -11,6 +11,7 @@ struct LoginView: View {
     
     @State private var email = ""
     @State private var password = ""
+    @StateObject var viewModel = LoginViewModel()
     
     var body: some View {
         // Login View
@@ -29,12 +30,12 @@ struct LoginView: View {
                 // text fields
                 VStack {
                     // email
-                    TextField("email", text: $email)
+                    TextField("email", text: $viewModel.email)
                         .autocapitalization(.none)
                         .modifier(IGTextFieldModifier())
                     
                     // password
-                    SecureField("password", text: $password)
+                    SecureField("password", text: $viewModel.password)
                         .modifier(IGTextFieldModifier())
                 }
                 
@@ -53,6 +54,7 @@ struct LoginView: View {
                 // login button
                 Button {
                     print("login click")
+                    Task {try await viewModel.signIn()}
                 } label: {
                     Text("Login")
                         .modifier(BlueButtonModifier())
