@@ -48,7 +48,7 @@ struct ProfileHeaderView: View {
             Button() {
                 
             } label: {
-                Text("Profile Edit")
+                Text(user.isCurrentUser ? "Edit Profile" : "Follow")
                     .font(.subheadline)
                     .fontWeight(.semibold)
                     .frame(width: 360, height: 32)
