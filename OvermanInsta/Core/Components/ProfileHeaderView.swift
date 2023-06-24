@@ -52,8 +52,11 @@ struct ProfileHeaderView: View {
                     .font(.subheadline)
                     .fontWeight(.semibold)
                     .frame(width: 360, height: 32)
+                    .background(user.isCurrentUser ? .white : .blue)
+                    .cornerRadius(6)
                     .foregroundColor(.black)
                     .overlay(RoundedRectangle(cornerRadius: 6).stroke(Color.gray, lineWidth: 1))
+                
             }
             
             Divider()
