@@ -31,6 +31,7 @@
 		A881521C2A42916B002F2472 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881521B2A42916B002F2472 /* LoginViewModel.swift */; };
 		A881521E2A431EB4002F2472 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881521D2A431EB4002F2472 /* UserService.swift */; };
 		A88152242A43FD70002F2472 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88152232A43FD70002F2472 /* SearchViewModel.swift */; };
+		A88152262A494602002F2472 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88152252A494602002F2472 /* EditProfileView.swift */; };
 		A8D482612A331846000D427A /* OvermanInstaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D482602A331846000D427A /* OvermanInstaApp.swift */; };
 		A8D482632A331846000D427A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D482622A331846000D427A /* ContentView.swift */; };
 		A8D482652A331848000D427A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8D482642A331848000D427A /* Assets.xcassets */; };
@@ -65,6 +66,7 @@
 		A881521B2A42916B002F2472 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		A881521D2A431EB4002F2472 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		A88152232A43FD70002F2472 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		A88152252A494602002F2472 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		A8D4825D2A331846000D427A /* OvermanInsta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OvermanInsta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D482602A331846000D427A /* OvermanInstaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvermanInstaApp.swift; sourceTree = "<group>"; };
 		A8D482622A331846000D427A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -278,6 +280,8 @@
 			children = (
 				A8D4827D2A331E86000D427A /* ProfileView.swift */,
 				A838FF6F2A3969340090382D /* CurrentUserProfileView.swift */,
+				A86D0EB72A3B254E0076B86D /* ProfileHeaderView.swift */,
+				A88152252A494602002F2472 /* EditProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -315,7 +319,6 @@
 				A838FF632A373CDA0090382D /* IGTextFieldModifier.swift */,
 				A838FF6B2A381FEB0090382D /* BlueButtonModifier.swift */,
 				A838FF732A3AC3350090382D /* PostGridView.swift */,
-				A86D0EB72A3B254E0076B86D /* ProfileHeaderView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 				A88152152A407E64002F2472 /* ContentViewModel.swift in Sources */,
 				A86D0EB82A3B254E0076B86D /* ProfileHeaderView.swift in Sources */,
 				A863E0C02A36D2DD00FFC151 /* AddEmailView.swift in Sources */,
+				A88152262A494602002F2472 /* EditProfileView.swift in Sources */,
 				A8D482882A34935F000D427A /* SearchView.swift in Sources */,
 				A838FF6A2A381EF00090382D /* CompleteSignUpView.swift in Sources */,
 				A838FF642A373CDA0090382D /* IGTextFieldModifier.swift in Sources */,
