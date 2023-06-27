@@ -32,6 +32,7 @@
 		A881521E2A431EB4002F2472 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881521D2A431EB4002F2472 /* UserService.swift */; };
 		A88152242A43FD70002F2472 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88152232A43FD70002F2472 /* SearchViewModel.swift */; };
 		A88152262A494602002F2472 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88152252A494602002F2472 /* EditProfileView.swift */; };
+		A881522A2A4A979D002F2472 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88152292A4A979D002F2472 /* EditProfileViewModel.swift */; };
 		A8D482612A331846000D427A /* OvermanInstaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D482602A331846000D427A /* OvermanInstaApp.swift */; };
 		A8D482632A331846000D427A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D482622A331846000D427A /* ContentView.swift */; };
 		A8D482652A331848000D427A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8D482642A331848000D427A /* Assets.xcassets */; };
@@ -67,6 +68,7 @@
 		A881521D2A431EB4002F2472 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		A88152232A43FD70002F2472 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		A88152252A494602002F2472 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		A88152292A4A979D002F2472 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 		A8D4825D2A331846000D427A /* OvermanInsta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OvermanInsta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D482602A331846000D427A /* OvermanInstaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvermanInstaApp.swift; sourceTree = "<group>"; };
 		A8D482622A331846000D427A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -157,6 +159,25 @@
 				A88152232A43FD70002F2472 /* SearchViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A88152272A4A96F1002F2472 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8D4827D2A331E86000D427A /* ProfileView.swift */,
+				A838FF6F2A3969340090382D /* CurrentUserProfileView.swift */,
+				A86D0EB72A3B254E0076B86D /* ProfileHeaderView.swift */,
+				A88152252A494602002F2472 /* EditProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A88152282A4A9786002F2472 /* ProfileEditViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A88152292A4A979D002F2472 /* EditProfileViewModel.swift */,
+			);
+			path = ProfileEditViewModel;
 			sourceTree = "<group>";
 		};
 		A8D482542A331846000D427A = {
@@ -278,10 +299,8 @@
 		A8D482772A3319E5000D427A /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				A8D4827D2A331E86000D427A /* ProfileView.swift */,
-				A838FF6F2A3969340090382D /* CurrentUserProfileView.swift */,
-				A86D0EB72A3B254E0076B86D /* ProfileHeaderView.swift */,
-				A88152252A494602002F2472 /* EditProfileView.swift */,
+				A88152282A4A9786002F2472 /* ProfileEditViewModel */,
+				A88152272A4A96F1002F2472 /* View */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -423,6 +442,7 @@
 				A838FF642A373CDA0090382D /* IGTextFieldModifier.swift in Sources */,
 				A838FF662A373EE40090382D /* CreateUsernameView.swift in Sources */,
 				A86D0EBC2A3B31750076B86D /* UploadPostViewModel.swift in Sources */,
+				A881522A2A4A979D002F2472 /* EditProfileViewModel.swift in Sources */,
 				A838FF742A3AC3350090382D /* PostGridView.swift in Sources */,
 				A8D482812A33284A000D427A /* UserStatView.swift in Sources */,
 				A8D482832A332EB8000D427A /* FeedView.swift in Sources */,

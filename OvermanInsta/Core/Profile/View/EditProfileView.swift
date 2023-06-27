@@ -11,10 +11,9 @@ import PhotosUI
 struct EditProfileView: View {
     
     @Environment(\.dismiss) var dismiss
-    @State private var selectedImage: PhotosPickerItem?
     
-    @State private var pullName: String = ""
-    @State private var bio: String = ""
+    @StateObject var viewModel: EditProfileViewModel = EditProfileViewModel()
+    
     
     var body: some View {
         VStack {
@@ -49,11 +48,20 @@ struct EditProfileView: View {
             }
             
             // edit profile pic
-            PhotosPicker(selection: $selectedImage, label: {
+            PhotosPicker(selection: $viewModel.selectedImage, label: {
                 VStack {
-                    Image(systemName: "person")
-                        .resizable()
-                    .frame(width: 80, height: 80)
+                    if let image = viewModel.profileImage {
+                        image
+                            .resizable()
+                            .frame(width: 80, height: 80)
+                            .cornerRadius(10)
+                    }
+                    else {
+                        Image(systemName: "person")
+                            .resizable()
+                            .frame(width: 80, height: 80)
+                            .cornerRadius(10)
+                    }
                     Text("프로필 사진 수정하기")
                 }
             })
@@ -62,8 +70,8 @@ struct EditProfileView: View {
             
             // edit profile info
             VStack {
-                EditProfileRowView(title: "이름", placeholder: "이름 입력", text: $pullName)
-                EditProfileRowView(title: "바이오", placeholder: "바이오 입력", text: $bio)
+                EditProfileRowView(title: "이름", placeholder: "이름 입력", text: $viewModel.pullName)
+                EditProfileRowView(title: "바이오", placeholder: "바이오 입력", text: $viewModel.bio)
             }
             Spacer()
             
