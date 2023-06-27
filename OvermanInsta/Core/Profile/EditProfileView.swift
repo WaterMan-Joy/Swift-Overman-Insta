@@ -13,6 +13,9 @@ struct EditProfileView: View {
     @Environment(\.dismiss) var dismiss
     @State private var selectedImage: PhotosPickerItem?
     
+    @State private var pullName: String = ""
+    @State private var bio: String = ""
+    
     var body: some View {
         VStack {
             
@@ -41,19 +44,51 @@ struct EditProfileView: View {
                             .fontWeight(.bold)
                     })
                 }
-                .padding()
-                
+                .padding(.horizontal)
                 Divider()
             }
             
             // edit profile pic
             PhotosPicker(selection: $selectedImage, label: {
-                Image(systemName: "person")
+                VStack {
+                    Image(systemName: "person")
+                        .resizable()
+                    .frame(width: 80, height: 80)
+                    Text("프로필 사진 수정하기")
+                }
             })
-            
+            .padding(.vertical, 10)
+            Divider()
             
             // edit profile info
+            VStack {
+                EditProfileRowView(title: "이름", placeholder: "이름 입력", text: $pullName)
+                EditProfileRowView(title: "바이오", placeholder: "바이오 입력", text: $bio)
+            }
+            Spacer()
+            
         }
+    }
+}
+
+struct EditProfileRowView: View {
+    let title: String
+    let placeholder: String
+    @Binding var text: String
+    
+    var body: some View {
+        HStack {
+            Text(title)
+                .padding(.leading, 20)
+                .frame(width: 100, alignment: .leading)
+            
+            VStack {
+                TextField(placeholder, text: $text)
+                Divider()
+            }
+        }
+        .font(.subheadline)
+        .frame(height: 36)
     }
 }
 
