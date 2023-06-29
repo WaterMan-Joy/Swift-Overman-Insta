@@ -33,11 +33,20 @@ class EditProfileViewModel: ObservableObject {
     }
     
     func updateUserData() async throws {
+        
+        var data: [String: Any] = [String: Any]()
+        print(data)
+        
         if !userName.isEmpty && user.userName != userName {
             print("DEBUG : user name")
+            data["userName"] = userName
         }
         if !bio.isEmpty && user.bio != bio {
             print("DEBUG : bio")
+            data["bio"] = bio
+        }
+        if !data.isEmpty {
+            try await Firestore.firestore().collection("users").document(user.id).updateData(data)
         }
     }
 }
