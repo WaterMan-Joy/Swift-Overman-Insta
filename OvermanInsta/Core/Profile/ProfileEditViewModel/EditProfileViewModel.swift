@@ -21,6 +21,8 @@ class EditProfileViewModel: ObservableObject {
     @Published var bio: String = ""
     @Published var profileImage: Image?
     
+    private var uiImage: UIImage?
+    
     init(user: User) {
         self.user = user
     }
@@ -29,6 +31,7 @@ class EditProfileViewModel: ObservableObject {
         guard let item = item else {return}
         guard let data = try? await item.loadTransferable(type: Data.self) else {return}
         guard let uiImage = UIImage(data: data) else {return}
+        self.uiImage = uiImage
         self.profileImage = Image(uiImage: uiImage)
     }
     
@@ -36,6 +39,11 @@ class EditProfileViewModel: ObservableObject {
         
         var data: [String: Any] = [String: Any]()
         print(data)
+        
+        if let uiImage = uiImage {
+            let imageUrl = try? await ImageUploader.uploadImage(image: uiImage)
+            data["profileImageUrl"] = imageUrl
+        }
         
         if !userName.isEmpty && user.userName != userName {
             print("DEBUG : user name")

@@ -33,6 +33,7 @@
 		A88152242A43FD70002F2472 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88152232A43FD70002F2472 /* SearchViewModel.swift */; };
 		A88152262A494602002F2472 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88152252A494602002F2472 /* EditProfileView.swift */; };
 		A881522A2A4A979D002F2472 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88152292A4A979D002F2472 /* EditProfileViewModel.swift */; };
+		A8BF1CAF2A4F07B000FFFF33 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BF1CAE2A4F07B000FFFF33 /* ImageUploader.swift */; };
 		A8D482612A331846000D427A /* OvermanInstaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D482602A331846000D427A /* OvermanInstaApp.swift */; };
 		A8D482632A331846000D427A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D482622A331846000D427A /* ContentView.swift */; };
 		A8D482652A331848000D427A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8D482642A331848000D427A /* Assets.xcassets */; };
@@ -69,6 +70,7 @@
 		A88152232A43FD70002F2472 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		A88152252A494602002F2472 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		A88152292A4A979D002F2472 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
+		A8BF1CAE2A4F07B000FFFF33 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		A8D4825D2A331846000D427A /* OvermanInsta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OvermanInsta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D482602A331846000D427A /* OvermanInstaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvermanInstaApp.swift; sourceTree = "<group>"; };
 		A8D482622A331846000D427A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				A881521D2A431EB4002F2472 /* UserService.swift */,
+				A8BF1CAE2A4F07B000FFFF33 /* ImageUploader.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 				A88152112A40756D002F2472 /* AuthService.swift in Sources */,
 				A8D4827E2A331E86000D427A /* ProfileView.swift in Sources */,
 				A838FF6C2A381FEB0090382D /* BlueButtonModifier.swift in Sources */,
+				A8BF1CAF2A4F07B000FFFF33 /* ImageUploader.swift in Sources */,
 				A8D482632A331846000D427A /* ContentView.swift in Sources */,
 				A838FF6E2A3824650090382D /* User.swift in Sources */,
 				A8D4828A2A3496F8000D427A /* LoginView.swift in Sources */,
