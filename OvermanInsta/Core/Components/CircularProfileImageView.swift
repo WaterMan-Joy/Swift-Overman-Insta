@@ -47,6 +47,7 @@ struct CircularProfileImageView: View {
                 .resizable()
                 .scaledToFill()
                 .frame(width: size.dimention, height: size.dimention)
+                .foregroundColor(Color(.systemGray6))
         }
     }
 }
