@@ -42,6 +42,7 @@ struct EditProfileView: View {
                         print("update profile")
                         Task {
                             try await viewModel.updateUserData()
+                            dismiss()
                         }
                     }, label: {
                         Text("완료")

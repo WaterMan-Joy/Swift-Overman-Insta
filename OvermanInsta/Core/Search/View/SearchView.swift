@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct SearchView: View {
     
@@ -20,10 +21,10 @@ struct SearchView: View {
                     ForEach(viewModel.users) { user in
                         NavigationLink(value: user) {
                             HStack {
-                                Image(systemName: "person.circle")
+                                KFImage(URL(string: user.profileImageUrl ?? ""))
                                     .resizable()
                                     .scaledToFill()
-                                    .frame(width: 50, height: 50)
+                                    .frame(width: 80, height: 80)
                                     .clipShape(Circle())
                                 
                                 // username +
