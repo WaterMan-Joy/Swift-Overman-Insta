@@ -64,10 +64,7 @@ struct EditProfileView: View {
                             .cornerRadius(10)
                     }
                     else {
-                        Image(systemName: "person")
-                            .resizable()
-                            .frame(width: 80, height: 80)
-                            .cornerRadius(10)
+                        CircularProfileImageView(user: viewModel.user, size: .large)
                     }
                     Text("프로필 사진 수정하기")
                 }

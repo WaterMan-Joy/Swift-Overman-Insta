@@ -21,7 +21,10 @@ struct FeedView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Text("Over Man Logo")
+                    Image("over_man_logo")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 50, height: 50)
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {

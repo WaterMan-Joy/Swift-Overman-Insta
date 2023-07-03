@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 import PhotosUI
 import Firebase
+//import FirebaseFirestore
 
 @MainActor
 class EditProfileViewModel: ObservableObject {
@@ -17,14 +18,25 @@ class EditProfileViewModel: ObservableObject {
     @Published var selectedImage: PhotosPickerItem? {
         didSet { Task { await loadImage(fromItem: selectedImage)}}
     }
-    @Published var userName: String = ""
     @Published var bio: String = ""
+    @Published var userName: String = ""
+//    @Published var nickName: String = ""
     @Published var profileImage: Image?
     
     private var uiImage: UIImage?
     
     init(user: User) {
         self.user = user
+        
+        if let bio = user.bio {
+            self.bio = bio
+        }
+        
+        self.userName = user.userName
+        
+//        if let nickName = user.nickName {
+//            self.nickName = nickName
+//        }
     }
     
     func loadImage(fromItem item: PhotosPickerItem?) async {

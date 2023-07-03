@@ -15,6 +15,8 @@ struct ContentView: View {
     
     var body: some View {
         Group {
+//            LoginView()
+//                .environmentObject(registerViewModel)
             if viewModel.userSession == nil {
                 LoginView()
                     .environmentObject(registerViewModel)

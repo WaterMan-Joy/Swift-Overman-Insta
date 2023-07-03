@@ -16,16 +16,12 @@ struct LoginView: View {
     var body: some View {
         // Login View
         NavigationStack {
-            
-            
-            
             VStack {
                 
-                Spacer()
-                
-                Text("INSTA")
-                    .font(.footnote)
-                    .fontWeight(.bold)
+                Image("over_man_logo")
+                    .resizable()
+                    .scaledToFill()
+                    
                 
                 // text fields
                 VStack {
