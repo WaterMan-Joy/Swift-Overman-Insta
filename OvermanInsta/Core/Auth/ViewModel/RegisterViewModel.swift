@@ -12,6 +12,7 @@ class RegisterViewModel: ObservableObject {
     @Published var email: String = ""
     @Published var password: String = ""
     
+    
     func createUser() async throws{
        try await AuthService.shared.createUser(userName: userName, email: email, password: password)
         

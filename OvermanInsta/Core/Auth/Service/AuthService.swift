@@ -8,6 +8,7 @@
 import Foundation
 import FirebaseAuth
 import FirebaseFirestoreSwift
+import FirebaseFirestore
 import Firebase
 
 class AuthService {
@@ -50,9 +51,7 @@ class AuthService {
         self.userSession = Auth.auth().currentUser
 //        guard let currentUid = Auth.auth().currentUser?.uid else {return}
         guard let currentUid = userSession?.uid else {return}
-        let snapshot =  try await Firestore.firestore().collection("users").document(currentUid).getDocument()
-        print("Snapshot data is \(String(describing: snapshot.data()))")
-        self.currentUser = try? snapshot.data(as: User.self)
+        self.currentUser = try await UserService.fetchUser(withUid: currentUid)
     }
     
     func signout() {

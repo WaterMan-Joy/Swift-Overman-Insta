@@ -5,7 +5,7 @@
 //  Created by 김종희 on 2023/06/21.
 //
 
-import Foundation
+
 import Firebase
 
 struct UserService {
@@ -24,6 +24,11 @@ struct UserService {
 //        }
 //
 //        return users
+    }
+    
+    static func fetchUser(withUid: String) async throws -> User {
+        let snapshot =  try await Firestore.firestore().collection("users").document(withUid).getDocument()
+        return try! snapshot.data(as: User.self)
     }
     
 }

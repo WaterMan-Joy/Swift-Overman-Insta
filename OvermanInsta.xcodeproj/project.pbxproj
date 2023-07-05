@@ -16,6 +16,7 @@
 		A838FF702A3969340090382D /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A838FF6F2A3969340090382D /* CurrentUserProfileView.swift */; };
 		A838FF722A39ED0A0090382D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A838FF712A39ED0A0090382D /* Post.swift */; };
 		A838FF742A3AC3350090382D /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A838FF732A3AC3350090382D /* PostGridView.swift */; };
+		A84BEDFD2A52E76E002C8DF9 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84BEDFC2A52E76E002C8DF9 /* FeedViewModel.swift */; };
 		A863E0C02A36D2DD00FFC151 /* AddEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A863E0BF2A36D2DD00FFC151 /* AddEmailView.swift */; };
 		A86D0EB82A3B254E0076B86D /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86D0EB72A3B254E0076B86D /* ProfileHeaderView.swift */; };
 		A86D0EBA2A3B28FC0076B86D /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86D0EB92A3B28FC0076B86D /* UploadPostView.swift */; };
@@ -33,6 +34,7 @@
 		A88152242A43FD70002F2472 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88152232A43FD70002F2472 /* SearchViewModel.swift */; };
 		A88152262A494602002F2472 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88152252A494602002F2472 /* EditProfileView.swift */; };
 		A881522A2A4A979D002F2472 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88152292A4A979D002F2472 /* EditProfileViewModel.swift */; };
+		A8AAC5022A557F0B00C0E85A /* PostGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AAC5012A557F0B00C0E85A /* PostGridViewModel.swift */; };
 		A8BF1CAF2A4F07B000FFFF33 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BF1CAE2A4F07B000FFFF33 /* ImageUploader.swift */; };
 		A8D482612A331846000D427A /* OvermanInstaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D482602A331846000D427A /* OvermanInstaApp.swift */; };
 		A8D482632A331846000D427A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D482622A331846000D427A /* ContentView.swift */; };
@@ -45,6 +47,7 @@
 		A8D482852A332EC0000D427A /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D482842A332EC0000D427A /* FeedCell.swift */; };
 		A8D482882A34935F000D427A /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D482872A34935F000D427A /* SearchView.swift */; };
 		A8D4828A2A3496F8000D427A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D482892A3496F8000D427A /* LoginView.swift */; };
+		A8E390302A542C1A00D768BC /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E3902F2A542C1A00D768BC /* PostService.swift */; };
 		A8FEE2642A528780007FA32E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A8FEE2632A528780007FA32E /* Kingfisher */; };
 		A8FEE2662A5288F2007FA32E /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FEE2652A5288F2007FA32E /* CircularProfileImageView.swift */; };
 /* End PBXBuildFile section */
@@ -59,6 +62,7 @@
 		A838FF6F2A3969340090382D /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
 		A838FF712A39ED0A0090382D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		A838FF732A3AC3350090382D /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
+		A84BEDFC2A52E76E002C8DF9 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		A863E0BF2A36D2DD00FFC151 /* AddEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailView.swift; sourceTree = "<group>"; };
 		A86D0EB72A3B254E0076B86D /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		A86D0EB92A3B28FC0076B86D /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
@@ -72,6 +76,7 @@
 		A88152232A43FD70002F2472 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		A88152252A494602002F2472 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		A88152292A4A979D002F2472 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
+		A8AAC5012A557F0B00C0E85A /* PostGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridViewModel.swift; sourceTree = "<group>"; };
 		A8BF1CAE2A4F07B000FFFF33 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		A8D4825D2A331846000D427A /* OvermanInsta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OvermanInsta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D482602A331846000D427A /* OvermanInstaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvermanInstaApp.swift; sourceTree = "<group>"; };
@@ -87,6 +92,7 @@
 		A8D482862A33E7F8000D427A /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A8D482872A34935F000D427A /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		A8D482892A3496F8000D427A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A8E3902F2A542C1A00D768BC /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		A8FEE2652A5288F2007FA32E /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +112,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A84BEDFA2A52E733002C8DF9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A84BEDFC2A52E76E002C8DF9 /* FeedViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A84BEDFB2A52E742002C8DF9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8D482822A332EB8000D427A /* FeedView.swift */,
+				A8D482842A332EC0000D427A /* FeedCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A86D0EC82A40739F0076B86D /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +225,26 @@
 			path = ProfileEditViewModel;
 			sourceTree = "<group>";
 		};
+		A8AAC4FF2A557ED100C0E85A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8D482802A33284A000D427A /* UserStatView.swift */,
+				A838FF632A373CDA0090382D /* IGTextFieldModifier.swift */,
+				A838FF6B2A381FEB0090382D /* BlueButtonModifier.swift */,
+				A838FF732A3AC3350090382D /* PostGridView.swift */,
+				A8FEE2652A5288F2007FA32E /* CircularProfileImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A8AAC5002A557ED500C0E85A /* VIewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A8AAC5012A557F0B00C0E85A /* PostGridViewModel.swift */,
+			);
+			path = VIewModel;
+			sourceTree = "<group>";
+		};
 		A8D482542A331846000D427A = {
 			isa = PBXGroup;
 			children = (
@@ -286,6 +329,7 @@
 			isa = PBXGroup;
 			children = (
 				A881521D2A431EB4002F2472 /* UserService.swift */,
+				A8E3902F2A542C1A00D768BC /* PostService.swift */,
 				A8BF1CAE2A4F07B000FFFF33 /* ImageUploader.swift */,
 			);
 			path = Services;
@@ -304,8 +348,8 @@
 		A8D482752A3319D0000D427A /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				A8D482822A332EB8000D427A /* FeedView.swift */,
-				A8D482842A332EC0000D427A /* FeedCell.swift */,
+				A84BEDFB2A52E742002C8DF9 /* View */,
+				A84BEDFA2A52E733002C8DF9 /* ViewModel */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -357,11 +401,8 @@
 		A8D4827F2A33282C000D427A /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				A8D482802A33284A000D427A /* UserStatView.swift */,
-				A838FF632A373CDA0090382D /* IGTextFieldModifier.swift */,
-				A838FF6B2A381FEB0090382D /* BlueButtonModifier.swift */,
-				A838FF732A3AC3350090382D /* PostGridView.swift */,
-				A8FEE2652A5288F2007FA32E /* CircularProfileImageView.swift */,
+				A8AAC5002A557ED500C0E85A /* VIewModel */,
+				A8AAC4FF2A557ED100C0E85A /* View */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -448,11 +489,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8AAC5022A557F0B00C0E85A /* PostGridViewModel.swift in Sources */,
 				A8D482852A332EC0000D427A /* FeedCell.swift in Sources */,
 				A881521A2A41AC8F002F2472 /* RegisterViewModel.swift in Sources */,
 				A881521E2A431EB4002F2472 /* UserService.swift in Sources */,
 				A88152112A40756D002F2472 /* AuthService.swift in Sources */,
 				A8D4827E2A331E86000D427A /* ProfileView.swift in Sources */,
+				A84BEDFD2A52E76E002C8DF9 /* FeedViewModel.swift in Sources */,
 				A838FF6C2A381FEB0090382D /* BlueButtonModifier.swift in Sources */,
 				A8BF1CAF2A4F07B000FFFF33 /* ImageUploader.swift in Sources */,
 				A8D482632A331846000D427A /* ContentView.swift in Sources */,
@@ -472,6 +515,7 @@
 				A881522A2A4A979D002F2472 /* EditProfileViewModel.swift in Sources */,
 				A838FF742A3AC3350090382D /* PostGridView.swift in Sources */,
 				A8D482812A33284A000D427A /* UserStatView.swift in Sources */,
+				A8E390302A542C1A00D768BC /* PostService.swift in Sources */,
 				A8D482832A332EB8000D427A /* FeedView.swift in Sources */,
 				A88152242A43FD70002F2472 /* SearchViewModel.swift in Sources */,
 				A86D0EBA2A3B28FC0076B86D /* UploadPostView.swift in Sources */,
